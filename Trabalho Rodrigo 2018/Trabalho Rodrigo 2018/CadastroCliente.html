@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Projeto -->
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Cadastro Cliente - PetShop</title>
+    </head>
+    <body>
+        <!-- Tela Esquerda - Menu -->
+        <div id="esquerda">
+            <h1 class="titleMenu">Menu</h1>
+            <div id="menu">
+                <p><input id="buttonMenuCadCliente" class="btnMenu btn btn-outline-light btn-lg" type="button" value="Cadastrar Cliente" ></p>
+                <p><input id="buttonMenuCadPet" class="btnMenu btn-outline-light btn-lg" type="button" value="Cadastrar Pet" ></p>
+                <p><input id="buttonMenuBanhoTosa" class="btnMenu btn-outline-light btn-lg" type="button" value="Agendar Banho e Tosa" ></p>
+                <p><a href="Relatorio.html" style="color: #643b31"><input id="buttonMenuRelatorioVenda" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Agendamento" ></a></p>
+                <p><a href="RelatorioCadastro.html" style="color: #643b31"><input id="buttonMenuRelatorioCadastro" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Cadastro" ></a></p>
+            </div>
+        </div>
+        <!-- Fim Tela Esquerda -->
+        
+        <!-- Tela Centro - Formulário -->        
+        <img src="images/logo-web2.png" id="imgTopoTela">
+
+        <div id="test">
+            <h1 id="titleTela">Cadastro de Cliente</h1>
+            <div id="alteracoes">
+                <input id="buttonGravar" class="btnAlteracoes btn btn-primary" type="button" value="Gravar">
+                <input id="buttonAlterar" class="btnAlteracoes btn btn-primary" type="button" value="Alterar" >
+                <input id="buttonExcluir" class="btnAlteracoes btn btn-primary" type="button" value="Remover" >
+                <a href="TelaPrincipal.html"><input id="buttonCancelar" class=" btnAlteracoes btn btn-primary" type="button" value="Canelar"></a>
+            </div>
+            <div id="idCod">
+                <label for="codigo">Código</label>
+                <input type="number" class="form-control" id="cod" placeholder="Cód">
+            </div>
+        
+            <div id="centro" >  
+                <form >
+                    <div class="form-row">
+                        <div class="form-group col-md-6" id="divNome">
+                            <label for="inputName">Nome</label>
+                            <input type="name" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-6 " id="divCpf">
+                            <label for="inputPassword4">CPF</label>
+                            <input  class="form-control cpf-mask" id="cpf" type="text" placeholder="Ex.: 000.000.000-00">
+                        </div>                    
+                
+                        <div class="form-group col-md-6" id="divEmail">
+                            <label for="inputEmail4">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6" id="divDataNasc">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="dataNasc">
+                        </div>
+                        <div class="form-group col-md-6" id="divTel">
+                            <label for="inputPassword4">Telefone</label>
+                            <input type="cpf" class="form-control form-control cel-sp-mask" id="phone" placeholder="Ex.: (00) 0000-0000">
+                        </div>
+
+                        <div class="form-group col-md-6" id="divEndereco">
+                                <label for="inputPassword4">Endereço</label>
+                                <input type="endereco" class="form-control" id="end" placeholder="Av/Rua">
+                        </div>
+                        <div class="form-group col-md-6" id="divNum">
+                            <label for="inputPassword4">Nº</label>
+                            <input type="telefone" class="form-control" id="numEnd" placeholder="Nº">
+                        </div>
+                        <div class="form-group col-md-6" id="divBairro">
+                            <label for="inputPassword4">Bairro</label>
+                            <input type="telefone" class="form-control" id="bairro" placeholder="Bairro">
+                        </div>
+                        <div class="form-group col-md-6" id="divCidade">
+                            <label for="inputPassword4">Cidade</label>
+                            <input type="telefone" class="form-control" id="cidade" placeholder="Cidade">
+                        </div>
+                    </div>
+                </form>     
+            </div>
+            <!-- Fim Tela centro -->
+
+            <!-- Tela Direita - Foto Perfil -->
+            <div id="direita">
+                <h3 id="titleFoto">Foto de Perfil</h3>
+                <input id="inputFoto">
+                <div id="buttonFoto">
+                    <input  class="btnFoto btn btn-primary" type="button" value="Adicionar">
+                    <input  class="btnFoto btn btn-primary" type="button" value="Remover">
+                </div>
+            </div>
+            <!-- Fim Tela Direita -->
+        </div>
+
+        <!-- JS ProjetoInterno. -->
+        <script src="js/functionsComuns.js"></script>
+        <script src="js/CadastroCliente.js"></script>
+        <!-- JS Terceiros -->
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="https://assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>

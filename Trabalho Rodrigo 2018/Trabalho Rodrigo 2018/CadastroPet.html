@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Cadastro Pet - PetShop</title>
+    </head>
+    <body >
+        <!-- Tela Esquerda - Menu -->
+        <div id="esquerda">
+            <h1 class="titleMenu">Menu</h1>
+            <div id="menu">
+                <p><input id="buttonMenuCadCliente" class="btnMenu btn btn-outline-light btn-lg" type="button" value="Cadastrar Cliente" ></p>
+                <p><input id="buttonMenuCadPet" class="btnMenu btn-outline-light btn-lg" type="button" value="Cadastrar Pet" ></p>
+                <p><input id="buttonMenuBanhoTosa" class="btnMenu btn-outline-light btn-lg" type="button" value="Agendar Banho e Tosa" ></p>
+                <p><a href="Relatorio.html" style="color: #643b31"><input id="buttonMenuRelatorioVenda" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Agendamento" ></a></p>
+                <p><a href="RelatorioCadastro.html" style="color: #643b31"><input id="buttonMenuRelatorioCadastro" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Cadastro" ></a></p>
+            </div>
+        </div>
+        <!-- Fim Tela Esquerda -->
+        
+        <!-- Tela Centro - Formulário -->
+        <img src="images/logo-web2.png" id="imgTopoTela">
+
+        <h1 id="titleTela">Cadastro de Pet</h1>
+        <div id="alteracoes">
+            <input id="buttonGravar" class="btnAlteracoes btn btn-primary" type="button" value="Gravar">
+            <input id="buttonAlterar" class="btnAlteracoes btn btn-primary" type="button" value="Alterar" >
+            <input id="buttonExcluir" class="btnAlteracoes btn btn-primary" type="button" value="Remover" >
+            <a href="TelaPrincipal.html"><input id="buttonCancelar" class=" btnAlteracoes btn btn-primary" type="button" value="Cancelar"></a>
+        </div>
+        <div id="idCod">
+                <label for="codigo">Código</label>
+                <input type="number" class="form-control" id="cod" placeholder="Cód">
+        </div>
+
+        <div id="centro" >  
+            <form >
+                <div class="form-row">
+                    <div class="form-group col-md-6" id="divCodDono">
+                        <label for="inputPassword4">Cód. Dono</label>
+                        <input type="endereco" class="form-control" id="codDono" placeholder="Dono">
+                    </div>
+                    <div class="form-group col-md-6" id="divNomePet">
+                        <label for="inputEmail4">Nome</label>
+                        <input type="name" class="form-control" id="nomePet" placeholder="Nome">
+                    </div>
+                    <!-- <div class="form-group col-md-6" id="divEspecie">
+                        <label for="inputPassword4">Espécie</label>
+                        <input type="cpf" class="form-control" id="especiePet" placeholder="Espécie">
+                    </div>    -->
+                    <div class="form-group col-md-6" id="divEspecie">
+                        <label for="exampleFormControlSelect1">Espécie</label>
+                        <select class="form-control" id="especiePet">
+                          <option>Cachorro</option>
+                          <option>Gato</option>
+                        </select>
+                    </div>
+                             
+                    <div class="form-group col-md-6" id="divRaca">
+                        <label for="inputEmail4">Raça</label>
+                        <input type="email" class="form-control" id="racaPet" placeholder="Raça">
+                    </div>
+                    <div class="form-group col-md-6" id="divCor">
+                        <label for="inputPassword4">Cor do Pet</label>
+                        <input type="cpf" class="form-control" id="corPet" placeholder="Cor do Pet">
+                    </div>
+                    <div class="form-group col-md-6" id="divSexo">
+                        <label for="exampleFormControlSelect1">Sexo</label>
+                        <select class="form-control" id="sexoPet">
+                          <option>Femea</option>
+                          <option>Macho</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6" id="divDataNascPet" style="width: 401px">
+                        <label for="dataNascimento">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascPet">
+                     </div>
+
+                    <div class="form-group col-md-6" id="divTamanho">
+                        <label for="exampleFormControlSelect1">Tamanho</label>
+                        <select class="form-control" id="tamanhoPet">
+                          <option>Miniatura</option>
+                          <option>Pequeno</option>
+                          <option>Medio</option>
+                          <option>Grande</option>
+                          <option>Gigante</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6" id="divPelagem">
+                        <label for="exampleFormControlSelect1">Pelagem</label>
+                        <select class="form-control" id="pelagemPet">
+                          <option>Curta</option>
+                          <option>Média</option>
+                          <option>Longa</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6" id="divObsPet" style="width: 395px;">
+                        <label for="exampleFormControlTextarea1">Observação</label>
+                        <textarea class="form-control" id="obsPet" rows="3" placeholder="Alergia, doença, temperamento, etc.."></textarea>
+                    </div>
+                </div>
+            </form>     
+        </div>
+        <!-- Fim Tela Centro -->
+
+        <!-- Tela Direita - Foto Perfil -->
+        <div id="direita" >
+            <h3 id="titleFoto">Foto de Perfil</h3>
+            <input id="inputFoto">
+            <div id="buttonFoto">
+                <input  class="btnFoto btn btn-primary" type="button" value="Adicionar">
+                <input  class="btnFoto btn btn-primary" type="button" value="Remover">
+            </div>
+        </div>
+        <!-- Fim Tela Direita -->
+
+        <!-- JS projeto interno -->
+        <script src="js/functionsComuns.js"></script>
+        <script src="js/CadastroPet.js"></script>
+        <!-- JS de terceiros -->
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="https://assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>

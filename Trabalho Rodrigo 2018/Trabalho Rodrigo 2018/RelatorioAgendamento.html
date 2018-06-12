@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Relatorio - PetShop</title>
+    </head>
+    <body >
+            <!-- Tela Esquerda - Menu -->
+            <div id="esquerda">
+                <h1 class="titleMenu">Menu</h1>
+                <div id="menu">
+                    <p><input id="buttonMenuCadCliente" class="btnMenu btn btn-outline-light btn-lg" type="button" value="Cadastrar Cliente" ></p>
+                    <p><input id="buttonMenuCadPet" class="btnMenu btn-outline-light btn-lg" type="button" value="Cadastrar Pet" ></p>
+                    <p><input id="buttonMenuBanhoTosa" class="btnMenu btn-outline-light btn-lg" type="button" value="Agendar Banho e Tosa" ></p>
+                    <p><a href="Relatorio.html" style="color: #643b31"><input id="buttonMenuRelatorioVenda" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Agendamento" ></a></p>
+                    <p><a href="RelatorioCadastro.html" style="color: #643b31"><input id="buttonMenuRelatorioCadastro" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Cadastro" ></a></p>
+                </div>
+            </div>
+            <!-- Fim Tela Esquerda -->
+    
+            <!-- Tela Centro - Formulário -->
+            <img src="images/logo-web2.png" id="imgTopoTela">
+    
+            <h1 id="titleTela">Relatórios</h1>
+            <div id="alteracoes">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6" id="divPelagem" style="padding-left: 0px;width: 149px;">
+                            <label for="exampleFormControlSelect1">Relatório</label>
+                            <select class="form-control" id="selecaoServico" style="width: 134px;">
+                                <option>Banho</option>
+                                <option>Tosa</option>
+                                <option>Banho e Tosa</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6" id="divPeriodoDe" style="width: 175px; padding-left: 0px">
+                            <label for="dataNascimento">Período de:</label>
+                            <input type="date" class="form-control" id="dataInicial" st>
+                        </div>
+                        
+                        <div class="form-group col-md-6" id="divPeriodoA" style="width: 175px;padding-right: 15px;padding-left: 0px;">
+                            <label for="dataNascimento">à:</label>
+                            <input type="date" class="form-control" id="dataFinal" >
+                        </div>
+                        <div class="form-group col-md-6" id="divPelagem" style="padding-left: 0px;width: 130px;">
+                            <label for="exampleFormControlSelect1">Status</label>
+                            <select class="form-control" id="selecaoStatus" style="width: 114px;">
+                                <option>Agendado</option>
+                                <option>Executado</option>
+                                <option>Entregue</option>
+                                <option>Cancelado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6" id="divDataNascPet" style="width: 105px;padding-right: 15px;margin-bottom: 0px;margin-top: 24px;padding-left: 0px;left: 13px;">
+                                <input id="buttonVisualizar" class="btnAlteracoes btn btn-primary" type="button" value="Visualizar" >
+                        </div>
+                        <div class="form-group col-md-6" id="divDataNascPet" style="width: 117px;padding-right: 15px;margin-bottom: 0px;margin-top: 25px;left: 13px;padding-left: 0px;">
+                            <a href="RelatorioAgendamento.html"><input id="buttonCancelarRelatorio" class=" btnAlteracoes btn btn-primary" type="button" value="Voltar" style="right: 0px;left: 11px;"></a>
+                        </div>
+                        <div class="form-group col-md-6" id="divDataNascPet" style="width: 111px;padding-right: 15px;margin-bottom: 0px;margin-top: 25px;left: 13px;padding-left: 0px;">
+                            <a href="TelaPrincipal.html"><input id="buttonCancelar" class=" btnAlteracoes btn btn-primary" type="button" value="Cancelar" style="right: 0px;left: 11px;"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="centroRelatorio" style="margin-left: 0px;">
+                <table class="table table-striped" id="clientes_table">
+                        <thead  style="font-size: 15px; " >
+                            <tr style="border-top-style:ridge; border-bottom-style:ridge; border-color: saddlebrown; ">
+                                <th scope="col" style="width: 90px;">Data</th>
+                                <th scope="col">Codigo</th>
+                                <div>
+                                    <th scope="col" style="width: 170px;">Nome Cliente</th>
+                                    <th scope="col" style="width: 130px;">Nome Pet</th>
+                                    <th scope="col"style="width: 100px;">Banho</th>
+                                    <th scope="col" style="width: 100px;">Tosa</th>
+                                    <th scope="col" style="width: 105px;">Valor Banho</th>
+                                    <th scope="col" style="width: 100px;">Valor Tosa</th>
+                                    <th scope="col" style="width: 105px;">Total</th>
+                                </div>
+                            </tr>
+                        </thead>
+                        <tbody  style="font-size: 13px;">
+                        </tbody>
+                    </table>
+            </div>
+
+        <!-- JS Projeto Interno -->
+        <script src="js/functionsComuns.js"></script>
+        <script src="js/relatorioBanhoTosa.js"></script>
+        <!-- JS de terceiros -->
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="https://assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>

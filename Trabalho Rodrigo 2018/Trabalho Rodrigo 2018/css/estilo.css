@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Todas as Telas */
+body {
+    background-color: navajowhite
+}
+
+
+/* Classe Form Group */
+.form-group {
+    width: 490px;
+
+}
+
+/* Tela Login */
+#imgTelaLogin {
+    position: relative;     
+    padding-left: 508px;
+    padding-right: 339px;
+
+}
+
+/* Menu */
+#esquerda{
+    display: inline;
+    float: left;
+    background-color: SandyBrown; 
+    height: 662px; 
+    width: 20%; 
+    border-right-style: ridge; 
+    border-color: SandyBrown;
+}
+
+#menu{
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    /* padding-top: 50px; */
+}
+
+a:link {
+    text-decoration: none;
+    color: SaddleBrown;
+}
+
+.btnMenu{
+    width: 230px; 
+    height: 50px; 
+    background-color: chocolate;
+    border: chocolate;    
+}
+
+.titleMenu {
+    color:SaddleBrown; 
+    font-size: 60px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    position: absolute; 
+    left: 60px; 
+    top: 50px;
+    padding-top: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+
+/* Tela Principal */
+#imgTelaPrincipal{
+    position: relative; 
+    left: 210px; 
+    top: 160px;
+}
+
+
+/* Tela Cadastros    */
+#titleTela{
+    color:SaddleBrown; 
+    font-size: 70px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    position: absolute; 
+    left: 300px;
+    top: 65px;
+}
+
+#imgTopoTela {
+    position: relative; 
+    left: 30%; 
+    top: 0px;
+}
+
+#alteracoes {
+    position: absolute;
+    left: 330px;
+    top: 188px;    
+}
+
+#idCod{
+    position: absolute;
+    left: 330px;
+    top: 260px;
+}
+
+#buttonGravar {
+    position: absolute;
+    left: 0px;
+    background-color: chocolate;
+    color: black;
+}
+
+#buttonAlterar {
+    position: absolute;    
+    left: 85px;
+    background-color: chocolate;
+    color: black;
+}
+
+#buttonExcluir {
+    position: absolute;
+    left: 170px;
+    background-color: chocolate;
+    color: black;
+}
+
+#buttonCancelar {
+    position: absolute;
+    left: 272px;
+    background-color: chocolate;
+    color: black;
+}
+
+#centro {
+	position: absolute; 
+	left: 315px;  /*209px*/
+    top: 345px; 
+}
+
+#direita{
+    position: absolute;
+    right: 0px;
+    height: 662px;
+    width: 19%; /*18*/
+    top: 0px;
+    /* background-color: red; */
+}
+
+#titleFoto {
+    position: absolute; 
+    top: 205px; 
+    left: 65px; 
+    font-size:25px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: saddlebrown;
+}
+
+#inputFoto {
+    left: 65px; 
+    top: 270px; 
+    position: absolute; 
+    width: 53%; 
+    height: 25%;
+}
+
+#buttonFoto {
+    padding-left: 50px;
+    padding-top: 455px
+}
+
+.btnFoto {
+    color: black; 
+    border: chocolate; 
+    font-family: Arial, Helvetica, sans-serif, sans-serif; 
+    background-color: chocolate
+}
+
+.btnAlteracoes {
+    border: chocolate; 
+    font-family: Arial, Helvetica, sans-serif, sans-serif; 
+    font-size: 15px; 
+    background-color: chocolate;
+}
+
+#cod {
+    width: 70px; 
+    height: 34px;
+}
+
+
+/* Cadastro Cliente */
+/* Div Input Centro */
+#divNome {
+    padding-left: 15px; 
+    padding-right: 27px; 
+    width: 625px;
+}
+
+#divCpf {
+    padding-left: 0px;
+    margin-bottom: 15px;
+    width: 161px;
+}
+
+#divEmail {
+    right: -80;
+    width: 427px;
+    padding-left: 15px;
+}
+
+#divDataNasc {
+    padding-left: -100;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 15px;
+    width: 186px;
+}
+
+#divTel {
+    padding-left: 12px;
+    width: 310px;
+}
+
+#divEndereco {
+    width: 340px;
+}
+
+#divNum {
+    width: 99px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+#divBairro {
+    padding-left: -100;
+    margin-bottom: 15px;
+    padding-left: 0px;
+    width: 166px;
+}
+
+#divCidade {
+    padding-left: 10px;
+    width: 310px;
+    margin-left: 10px;
+}
+
+/* Input Centro */
+#nome {
+    width: 584px;
+}
+
+#cpf {
+    width: 160px; 
+    left: 100%;
+}
+
+#email {
+    width: 398px;
+}
+
+#dataNasc {
+    width: 160px;
+    padding-left: 12px;
+}
+
+#phone {
+    width: 160px; 
+    left: 100%;
+}
+
+#end {
+    width: 326px;
+}
+
+#numEnd {
+    width: 50px;
+}
+
+#bairro {
+    width: 160px;
+}
+
+#cidade {
+    width: 160px;
+}
+
+
+/* Cadastro Pet */
+/* Div input Centro */
+#divCodDono {
+    width: 111px;
+}
+
+#divNomePet {
+    width: 502px;
+    padding-left: 12px;
+    padding-right: 15px;
+}
+
+#divEspecie {
+    width: 401px;
+    padding-left: 12px;
+    padding-right: 15px;
+}
+
+#divRaca {
+    width: 206px;
+    padding-left: 15px;
+}
+
+#divCor {
+    width: 204px;
+    padding-left: 12px;
+}
+
+#divSexo {
+    padding-left: 12px; 
+    width: 201px; 
+    padding-right: 15px;
+}
+
+#divDataNascPet {
+    /* width: 401px; */
+    padding-left: 12px;
+    padding-right: 16px;
+}
+
+#divTamanho {
+    width: 204px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#divPelagem {
+    padding-left: 12px;
+    width: 201px;
+}
+
+#DivObsPet {
+    padding-left: 12px; 
+    /* width: 395px; */
+}
+
+/* Input Centro */
+#codDono {
+    width: 80px;
+}
+
+#nomePet {
+    width: 474px;
+}
+
+#especiePet {
+    width: 160px; 
+    left: 100%;
+}
+
+#racaPet {
+    width: 178px;
+}
+
+#corPet {
+    width: 177px; 
+    left: 100%;
+}
+
+#dataNascPet{
+    width: 162px;
+}
+
+/* Select Centro */
+#sexoPet {
+    width: 173px;
+}
+
+#tamanhoPet {
+    width: 173px;
+}
+
+#pelagemPet {
+    width: 173px;
+}
+
+
+/* Tela Banho e Tosa */
+#centroAgendamento {
+    position: absolute; 
+	left: 315px;  /*209px*/
+    top: 261px;
+}
+
+/* Div Input Centro */
+#divCodPetAgenda {
+    width: 108px;
+    padding-right: 5px;
+}
+
+#divNomePetAgenda {
+    padding-left: 17px; 
+    width: 457px;
+}
+
+#divNomeClienteAgenda {
+    padding-left: 12px; 
+    width: 417px;
+}
+
+#divDataAgenda {
+    padding-left: 12px; 
+    width: 185px;
+}
+
+#divServicoAgenda {
+    width: 190px;
+}
+
+#divHorarioAgenda {
+    padding-left: 12px;
+    width: 190px;
+}
+
+#divValorAgenda {
+    width: 190px;
+}
+
+#divCategoriaAgenda {
+    padding-left: 12px;
+    width: 220px;
+}
+
+#divObsAgenda {
+    padding-left: 12px;
+    width: 565px;
+}
+
+#divAgendado {
+    padding-left: 75px;
+    width: 245px;
+    padding-right: 0px;
+}
+
+#divExecutado {
+    padding-left: 0px;
+    width: 147px;
+}
+
+#divEntregue {
+    padding-left: 75px;
+    width: 245px;
+    padding-right: 0px;
+}
+
+#divCancelado {
+    padding-left: 0px;
+    width: 160px;
+}
+
+/* Input Centro */
+
+/* Tela Relatorio */
+/* Tela Centro */
+#centroRelatorio {
+    position: absolute; 
+	left: 315px;  /*209px*/
+    top: 300px;
+    margin-left: 40px;
+}
+
+td, th {
+    text-align: center;
+}
+
+#buttonCliente, #buttonPet, #buttonVisualizar, #buttonCancelarRelatorio {
+    position: absolute;
+    background-color: chocolate;
+    width: 90px;
+    left: 0px;
+    color: black;
+}
+
+#alteracoesRelatorio {
+    position: absolute;
+    left: 330px;
+    top: 163px; 
+}
+
+
+
+#testRelatorioCadastro td {
+    /* width: 3.21cm; */
+    width: 150px;
+}
+
+#testRelatorioCadastroPet td {
+    width: 111px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TELA PRINCIPAL 2 */
+#imgTela2 {    
+    display: block;
+    margin: auto; 
+    position: absolute; 
+    top: 330px; 
+    left: 320px; 
+}
+
+#buttonCadCliente {
+    position: relative;
+    top: 120px;
+    left: 413px;
+    background-color: mediumturquoise;
+}
+
+#buttonCadPet {
+    position: relative;
+    top: 120px;
+    left: 423px;
+    background-color: mediumturquoise;
+}
+
+#buttonBanhoTosa {
+    position: relative;
+    top: 200px;
+    left: -95px;
+    background-color: mediumturquoise;
+}
+
+#buttonVacina {
+    position: relative;
+    top: 200px;
+    left: -85px;
+    background-color: mediumturquoise;
+}
+
+#buttonRelatorio {
+    position: relative;
+    top: 280px;
+    right: 480px;
+    background-color: mediumturquoise;
+}
+
+
+

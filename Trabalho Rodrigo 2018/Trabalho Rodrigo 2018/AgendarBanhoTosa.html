@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Agendar Banho e Tosa - PetShop</title>
+    </head>
+    <body >
+        <!-- Tela Esquerda - Menu -->
+        <div id="esquerda">
+            <h1 class="titleMenu">Menu</h1>
+            <div id="menu">
+                <p><input id="buttonMenuCadCliente" class="btnMenu btn btn-outline-light btn-lg" type="button" value="Cadastrar Cliente" ></p>
+                <p><input id="buttonMenuCadPet" class="btnMenu btn-outline-light btn-lg" type="button" value="Cadastrar Pet" ></p>
+                <p><input id="buttonMenuBanhoTosa" class="btnMenu btn-outline-light btn-lg" type="button" value="Agendar Banho e Tosa" ></p>
+                <p><a href="Relatorio.html" style="color: #643b31"><input id="buttonMenuRelatorioVenda" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Agendamento" ></a></p>
+                <p><a href="RelatorioCadastro.html" style="color: #643b31"><input id="buttonMenuRelatorioCadastro" class="btnMenu btn-outline-light btn-lg" type="button" value="Relatório Cadastro" ></a></p>
+            </div>
+        </div>
+        <!-- Fim Tela Esquerda -->
+
+        <!-- Tela Centro - Formulário -->
+        <img src="images/logo-web2.png" id="imgTopoTela">
+
+        <h1 id="titleTela">Agendar Banho e Tosa</h1>
+        <div id="alteracoes">
+            <input id="buttonGravar" class="btnAlteracoes btn btn-primary" type="button" value="Gravar">
+            <input id="buttonAlterar" class="btnAlteracoes btn btn-primary" type="button" value="Alterar" >
+            <input id="buttonExcluir" class="btnAlteracoes btn btn-primary" type="button" value="Remover" >
+            <a href="TelaPrincipal.html"><input id="buttonCancelar" class=" btnAlteracoes btn btn-primary" type="button" value="Cancelar"></a>
+        </div>
+
+        <div id="centroAgendamento">  
+            <form >
+                <div class="form-row">
+                    <div class="form-group col-md-6" id="divCodPetAgenda">
+                        <label for="inputPassword4">Cód. Pet</label>
+                        <input type="endereco" class="form-control" id="codPetAgenda" placeholder="Cliente">
+                    </div>                    
+                    <div class="form-group col-md-6" id="divNomePetAgenda">
+                        <label for="inputEmail4">Nome Pet</label>
+                        <input type="name" class="form-control" id="nomePetAgenda" placeholder="Nome" >
+                    </div>
+                    <div class="form-group col-md-6" id="divNomeClienteAgenda">
+                        <label for="inputEmail4">Nome Cliente</label>
+                        <input type="name" class="form-control" id="donoPetAgenda" placeholder="Nome" >
+                    </div>     
+                    
+                    <div class="form-group col-md-6" id="divDataAgenda">
+                        <label for="dataNascimento">Data</label>
+                        <input type="date" class="form-control" id="dataAgendaPet">
+                    </div>
+
+                    <div class="form-group col-md-6" id="divServicoAgenda">
+                        <label for="exampleFormControlSelect1">Serviço</label>
+                        <select class="form-control" id="servicoPetAgenda" >
+                            <option value="Banho">Banho</option>
+                            <option value="Tosa">Tosa</option>
+                            <option value="Banho e Tosa">Banho e Tosa</option>
+                        </select>
+                    </div>
+                                 
+                    <!-- <fieldset disabled> -->
+                        <div class="form-group col-md-6" id="divHorarioAgenda">
+                            <label for="exampleFormControlSelect1">Horário</label>
+                            <select class="form-control" id="horarioPetAgenda">
+                                <option value=""    >Horário</option>
+                                <option value=""    >Banho</option>
+                                <option value="9:00" >9:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value=""></option>
+                                <option value="">Tosa</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+
+                            </select>
+                        </div>   
+                        <div class="form-group col-md-6" id="divValorAgenda">
+                                <label for="exampleFormControlSelect1">Valor (R$)</label>
+                                <select class="form-control" id="valorPetAgenda" >
+                                    <option value="">Valor (R$)</option>
+                                    <option value="">Banho</option>
+                                    <option value="20.00">Miniatura (20,00)</option>
+                                    <option value="30.00">Pequeno (30,00)</option>
+                                    <option value="40.00">Medio (40,00)</option>
+                                    <option value="50.00">Grande (50,00)</option>
+                                    <option value="60.00">Gigante (60,00)</option>
+                                    <option value=""></option>
+                                    <option value="">Tosa</option>
+                                    <option value="20.00">Miniatura (20,00)</option>
+                                    <option value="30.00">Pequeno (30,00)</option>
+                                    <option value="40.00">Medio (40,00)</option>
+                                    <option value="50.00">Grande (50,00)</option>
+                                    <option value=""></option>
+                                    <option value="">Banho e Tosa</option>
+                                    <option value="40.00">Miniatura (40,00)</option>
+                                    <option value="60.00">Pequeno (60,00)</option>
+                                    <option value="80.00">Medio (80,00)</option>
+                                    <option value="100.00">Grande (100,00)</option>
+                                    <option value="120.00">Gigante (120,00)</option>
+                                </select>
+                        </div>    
+                    </fieldset>                      
+                    
+                    <div class="form-group col-md-6" id="divCategoriaAgenda">
+                            <label for="exampleFormControlSelect1">Categoria Tosa</label>
+                            <select class="form-control" id="catTosaPetAgenda" >
+                                <option value="">Categoria Tosa</option>
+                                <option value="10.00">Higiênica (+ R$: 10,00)</option>
+                                <option value="20.00">Simples (+ R$: 20,00)</option>
+                                <option value="30.00">Tesoura (+ R$: 30,00</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group col-md-6" id="divObsAgenda">
+                        <label for="exampleFormControlTextarea1">Observação</label>
+                        <textarea class="form-control" id="obsPetAgenda" rows="3" placeholder="Alergia, doença, temperamento, etc.." style="width: 538px; "></textarea>
+                    </div>
+
+                    <label style="padding-left: 35px;">Status</label><br>
+                    <div class="form-check form-group col-md-6" id="divAgendado">                                
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Agendado" checked>
+                        <label class="form-check-label" for="gridRadios1">Agendado</label>                                    
+                    </div>
+                    <div class="form-check form-group col-md-6" id="divExecutado">                                     
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Executado" checked >
+                        <label class="form-check-label" for="gridRadios1" >Executado</label>                                    
+                    </div>
+                    <div class="form-check form-group col-md-6" id="divEntregue">                                        
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Entregue" checked>
+                        <label class="form-check-label" for="gridRadios1">Etregue</label>                                    
+                    </div>
+                    <div class="form-check form-group col-md-6" id="divCancelado">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Cancelado" checked >
+                        <label class="form-check-label" for="gridRadios1" >Cancelado</label>                                    
+                    </div>
+                    </div>
+                </fieldset>
+            </form>     
+        </div>
+        <!-- Fim Tela Centro -->
+
+        <!-- JS projeto interno -->
+        <script src="js/functionsComuns.js"></script>
+        <script src="js/AgendaBanhoTosa.js"></script>
+        <!-- JS de terceiros -->
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="https://assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>
